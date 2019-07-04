@@ -1,11 +1,18 @@
 #ifndef FACESDETECTOR_H
 #define FACESDETECTOR_H
 
+#include "opencv2/core.hpp"
 
-class FacesDetector
+namespace faces_detector
 {
-public:
-  FacesDetector();
-};
 
+  class FacesDetector
+  {
+  public:
+    virtual ~FacesDetector();
+
+    virtual std::vector<cv::Rect> detect(const cv::Mat& img) = 0;
+  };
+
+}
 #endif // FACESDETECTOR_H

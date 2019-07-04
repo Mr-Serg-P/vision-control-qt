@@ -1,5 +1,8 @@
-//
-// Created by Serg on 27.05.2019.
-//
+#include "cameraopenexception.h"
 
-#include "CameraOpenException.h"
+using namespace camera;
+
+CameraOpenException::CameraOpenException()
+{
+
+}

@@ -1,18 +1,15 @@
-//
-// Created by Serg on 27.05.2019.
-//
-
-#ifndef VISION_CONTROL_CAMERAOPENEXCEPTION_H
-#define VISION_CONTROL_CAMERAOPENEXCEPTION_H
+#ifndef CAMERAOPENEXCEPTION_H
+#define CAMERAOPENEXCEPTION_H
 
 #include <exception>
 
 using namespace std;
 
-class CameraOpenException : public exception {
+namespace camera {
+  class CameraOpenException : public exception {
+  public:
+    CameraOpenException();
+  };
+}
 
-};
-
-#include "CameraOpenException.cpp"
-
-#endif //VISION_CONTROL_CAMERAOPENEXCEPTION_H
+#endif // CAMERAOPENEXCEPTION_H

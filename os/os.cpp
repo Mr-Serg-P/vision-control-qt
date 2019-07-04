@@ -1,6 +1,8 @@
 #include "os.h"
 
-OS::OS()
+using namespace os;
+
+OS::~OS()
 {
 
 }

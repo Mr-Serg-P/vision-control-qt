@@ -1,6 +1,8 @@
 #include "facesdetector.h"
 
-FacesDetector::FacesDetector()
+using namespace faces_detector;
+
+FacesDetector::~FacesDetector()
 {
 
-}
+};

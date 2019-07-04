@@ -1,6 +1,8 @@
 #include "faciallandmarksdetector.h"
 
-FacialLandmarksDetector::FacialLandmarksDetector()
+using namespace landmarks_detector;
+
+FacialLandmarksDetector::~FacialLandmarksDetector()
 {
 
 }

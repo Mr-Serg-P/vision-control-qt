@@ -1,14 +1,9 @@
-//
-// Created by Serg on 26.05.2019.
-//
-
-//#pragma once
 #ifndef OCVCAMERA_H
 #define OCVCAMERA_H
 
 #include "../Camera.h"
 #include "opencv2/videoio.hpp"
-#include <thread>
+
 
 namespace camera {
 
@@ -22,17 +17,15 @@ namespace camera {
     public:
         OCVCamera();
 
-        ~OCVCamera();
+        ~OCVCamera() override;
 
         void initialize() override;
         void start() override;
-        void snapshot(cv::UMat *frame) override;
+        void snapshot(cv::Mat& frame) override;
         void stop() override;
         void release() override;
     };
 
 }
 
-#include "OCVCamera.cpp"
-#endif
-//#include "OCVCamera.cpp"
+#endif // OCVCAMERA_H

@@ -1,5 +1,8 @@
-//
-// Created by Serg on 27.05.2019.
-//
+#include "cameraoccupiedexception.h"
 
-#include "CameraOccupiedException.h"
+using namespace camera;
+
+CameraOccupiedException::CameraOccupiedException()
+{
+
+}

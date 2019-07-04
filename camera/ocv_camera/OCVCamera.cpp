@@ -1,10 +1,4 @@
-//
-// Created by Serg on 26.05.2019.
-//
-
-#include "OCVCamera.h"
-
-#include <iostream>
+#include "ocvcamera.h"
 
 #include "opencv2/videoio.hpp"
 
@@ -42,8 +36,8 @@ void OCVCamera::start() {
 }
 
 
-void OCVCamera::snapshot(UMat *frame) {
-    capturer.read(*frame);
+void OCVCamera::snapshot(Mat& frame) {
+    capturer.read(frame);
 }
 
 void OCVCamera::stop() {
@@ -58,3 +52,4 @@ void OCVCamera::release() {
 inline bool OCVCamera::isOccupied() {
     return capturer.isOpened();
 }
+

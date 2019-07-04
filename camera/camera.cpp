@@ -1,6 +1,8 @@
 #include "camera.h"
 
-Camera::Camera()
+using namespace camera;
+
+Camera::~Camera()
 {
 
 }

@@ -1,6 +1,11 @@
 #include "eventshandler.h"
 
-EventsHandler::EventsHandler()
+#include <QObject>
+
+
+using namespace events_handling;
+
+EventsHandler::~EventsHandler()
 {
 
 }
